@@ -1,6 +1,5 @@
 import telebot
-
-bot = telebot.TeleBot('1104778803:AAHv9g6lHKJ6-T7UJL54KHEcYcm5AXSFASQ')
+bot = telebot.TeleBot('my token')
 # Start "Welcome" message
 #@bot.message_handler(commands=['start'])
 #def start_message(message):
@@ -27,7 +26,6 @@ def send_text(message):
         bot.send_sticker(message.chat.id, 'Шутить')
     else:
         bot.send_message(message.chat.id, 'эм, не понял')
-
 
 #def joke (message:)
 #def worldwide_search (message):
